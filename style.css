@@ -1,0 +1,17 @@
+#title {
+    font-size: 50px;
+    text-align: center;
+    transition-duration: 0.7s;
+    font-weight: light;
+  }
+  
+  #title:hover {
+    font-size: 52px;
+    color: #eb7d34;
+  }
+  
+  #box {
+    height: 500px;
+    margin 90px 20px 50px 20px;
+    box-shadow: 2px 6px 13px 2px;
+  }
