@@ -28,11 +28,11 @@ function main() {
         const xScale = d3.scaleBand()
                         .domain(values.map((d) => d[0]))
                         .rangeRound([0, 1500])
-                        .padding(100);
+                        .padding(0.1);
 
         const yScale = d3.scaleLinear()
-                        .domain([0, 275])
-                        .range([1500, 0]); 
+                        .domain([20, 1820])
+                        .range([1820, 0]); 
 
         const container = d3.select("svg")
                         .classed("container", true);
@@ -43,8 +43,8 @@ function main() {
                             .enter()
                             .append('rect')
                             .classed("bar", true)
-                            .attr("width", 5)
-                            .attr("height", (d) => 600-d[1]/10)
-                            .attr("x", (d, i) => ((i*10)+3))
-                            .attr("y", (d) => (d[1]/10));
+                            .attr("width", 3)
+                            .attr("height", (d) =>1900 - yScale(d[1]/10))
+                            .attr("x", (d) => xScale(d[0]))
+                            .attr("y", (d) => yScale(d[1]/10));
     }
