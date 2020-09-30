@@ -3,26 +3,36 @@
     text-align: center;
     transition-duration: 0.7s;
     font-weight: lighter;
+    padding-bottom: 50px 
   }
   
   #title:hover {
     font-size: 52px;
-    color: #eb7d34;
+    color: #34ebbd;
   }
   
   #box {
     align-items: center;
+    
   }
 
   .container {
-      height: 1900px;
+      height: 750px;
       width: 1500px;
-      border: 1px solid #eb7d34;
       display: flex;
       justify-content: center;
 
   }
 
   .bar {
-    fill: #eb7d34;
+    fill: #34ebcd;
+  }
+
+  .bar:hover {
+    fill: white;
+  }
+
+  svg {
+    display: block;
+    margin: auto;
   }
